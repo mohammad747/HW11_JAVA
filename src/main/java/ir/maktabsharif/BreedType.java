@@ -102,17 +102,4 @@ public enum BreedType {
     Wila_Krungthep,
     YorkChocolate
 
-
-//    private final String types;
-//
-//    private BreedType(final String types) {
-//        this.types = types;
-//    }
-//
-//    private String getTypes() {
-//        return types;
-//    }
-
-
-
 }
