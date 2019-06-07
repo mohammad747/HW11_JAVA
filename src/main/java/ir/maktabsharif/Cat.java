@@ -9,6 +9,16 @@ class Cat extends Animal {
         super.name = name;
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        Cat cat = (Cat) obj;
+        boolean status = false;
+        if (this.name.equalsIgnoreCase(cat.name)) {
+            status = true;
+        }
+        return status;
+    }
+
 
     String getBreed() {
         return breed.toString();

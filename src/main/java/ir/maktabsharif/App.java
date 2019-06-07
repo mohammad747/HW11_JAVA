@@ -14,18 +14,7 @@ public class App {
     public static void main(String[] args) {
 
 
-        List<Cat> cats = new ArrayList<>();
-
-        // Create an array of BreedType
-        BreedType[] breeds = BreedType.values();
-
-        // Create list of cats with their name and breed type
-        for (int i = 0; i < 99; i++) {
-
-            Cat cat = new Cat("cat" + (i + 1));
-            cat.setBreed(breeds[i]);
-            cats.add(cat);
-        }
+        List<Cat> cats = createListOfCats();
 
 
         // part 2-1
@@ -71,6 +60,22 @@ public class App {
 
 
     } // End of main
+
+    public static List<Cat> createListOfCats(){
+        List<Cat> cats = new ArrayList<>();
+
+        // Create an array of BreedType
+        BreedType[] breeds = BreedType.values();
+
+        // Create list of cats with their name and breed type
+        for (int i = 0; i < 99; i++) {
+
+            Cat cat = new Cat("cat" + (i + 1));
+            cat.setBreed(breeds[i]);
+            cats.add(cat);
+        }
+        return cats;
+    }
 } // End of class
 
 
